@@ -1,4 +1,4 @@
-Sample project for the use of Mountebank
+Sample project for the use of <a href="http://www.mbtest.org/">Mountebank</a>
 
 - Spring Boot application providing contact information
 - other Spring Boot application consuming contact information via synchronous HTTP call
