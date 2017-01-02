@@ -1,0 +1,4 @@
+rootProject.name = 'contracttest-mountebank-sample'
+include 'consumer'
+include 'provider'
+

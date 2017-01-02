@@ -1,0 +1,27 @@
+group 'org.eltoro'
+version '1.0-SNAPSHOT'
+
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+}
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile "org.codehaus.groovy:groovy-all:$groovyVersion"
+
+  compile("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
+  compile("org.springframework.boot:spring-boot-starter-actuator:$springBootVersion")
+  compile("org.springframework:spring-beans:$springVersion")
+  compile("org.springframework:spring-context:$springVersion")
+  compile("org.springframework:spring-web:$springVersion")
+  compile("org.springframework:spring-webmvc:$springVersion")
+  compile("org.springframework:spring-test:$springVersion")
+}

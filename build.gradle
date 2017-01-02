@@ -1,0 +1,30 @@
+group 'org.eltoro'
+version '1.0-SNAPSHOT'
+
+ext {
+  springVersion = '4.2.5.RELEASE'
+  springBootVersion = '1.3.2.RELEASE'
+  spockVersion = '1.0-groovy-2.4'
+  groovyVersion = '2.4.6'
+  jacksonVersion = '2.6.5'
+}
+
+buildscript {
+  repositories {
+    jcenter()
+    mavenCentral()
+  }
+}
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile "org.codehaus.groovy:groovy-all:$groovyVersion"
+}
